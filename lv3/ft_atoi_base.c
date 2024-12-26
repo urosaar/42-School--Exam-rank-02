@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 int ft_atoi_base(const char *str, int str_base)
 {
@@ -34,8 +33,4 @@ int ft_atoi_base(const char *str, int str_base)
     }
     return result * sign;
 }
-int main()
-{
-   int result = ft_atoi_base(" -2F", 16);
-    printf("%d\n", result); 
-}
+

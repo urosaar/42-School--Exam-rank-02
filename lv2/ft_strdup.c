@@ -1,5 +1,3 @@
-
-#include <stdio.h>
 #include <stdlib.h>
 
 int ft_strlen(char *src)
@@ -25,9 +23,4 @@ char    *ft_strdup(char *src)
     dst[i] = '\0';
     return(dst);
 }
-int main()
-{
-    char s[] = "hello";
-    char *d = ft_strdup(s);
-    printf("%s",d);
-}
+

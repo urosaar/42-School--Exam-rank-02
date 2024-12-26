@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 int	ft_strlen(char *str)
 {
     int i = 0;
@@ -7,9 +7,4 @@ int	ft_strlen(char *str)
         i++;
     }
     return(i);
-}
-int main()
-{
-    char w[]=" ";
-    printf("%d",ft_strlen(w));
 }

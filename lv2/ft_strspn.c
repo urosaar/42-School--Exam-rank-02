@@ -20,7 +20,3 @@ size_t	ft_strspn(const char *s, const char *accept)
     }
     return(i); 
 }
-int main()
-{
-    printf("%zu",ft_strspn("aaaaabchhh","ab"));
-}

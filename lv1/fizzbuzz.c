@@ -1,5 +1,5 @@
 
-#include <libc.h>
+#include <unistd.h>
 
 void printn( int n)
 {
@@ -11,7 +11,7 @@ void printn( int n)
 int main()
 {
     int i = 1;
-    while(i < 100)
+    while(i <= 100)
     {
         if( i % 15 == 0)
             write(1,"fizzbuzz",8);

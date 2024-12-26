@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 
 size_t	ft_strcspn(const char *s, const char *reject)
@@ -16,8 +15,4 @@ size_t	ft_strcspn(const char *s, const char *reject)
      i++;
     }
     return(i);
-}
-int main()
-{
-    printf("%zu",ft_strcspn("hello","o"));
 }

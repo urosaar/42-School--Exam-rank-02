@@ -1,7 +1,4 @@
 
-#include<unistd.h>
-#include<stdio.h>
-
 int ft_strlen(char *str)
 {
     int i = 0;
@@ -24,9 +21,4 @@ char    *ft_strrev(char *str)
         end--;
     }
     return(str);
-}
-int main()
-{
-    char str[]= "hello";
-    printf("%s",ft_strrev(str));
 }

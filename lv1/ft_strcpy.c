@@ -1,4 +1,4 @@
-#include<stdio.h>
+
 char	*ft_strcpy(char *s1, char *s2)
 {
 	int i = 0;
@@ -10,10 +10,4 @@ char	*ft_strcpy(char *s1, char *s2)
 	}
 	s1[i] = '\0';
 	return (s1);
-}
-int main()
-{
-    char s[]="hello";
-    char d[2];
-    printf("%s",ft_strcpy(d,s));
 }

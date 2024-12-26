@@ -1,4 +1,4 @@
-#include<stdio.h>
+
 int		max(int* tab, unsigned int len)
 {
     unsigned int i = 0;
@@ -12,10 +12,4 @@ int		max(int* tab, unsigned int len)
         i++;
     }
     return(res);
-}
-int main()
-{
-    int arr[] = {};
-    unsigned int len = sizeof(arr)/sizeof(arr[0]);
-    printf("%d",max(arr,len));
 }

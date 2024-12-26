@@ -1,6 +1,4 @@
 
-#include<stdio.h>
-
 int    ft_strcmp(char *s1, char *s2)
 {
     int i = 0;
@@ -11,8 +9,4 @@ int    ft_strcmp(char *s1, char *s2)
         i++;   
     }
     return(res);
-}
-int main()
-{
-    printf("%d",ft_strcmp("6","7"));
 }

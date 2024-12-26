@@ -1,5 +1,4 @@
 #include<unistd.h>
-#include<stdio.h>
 
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
@@ -18,8 +17,4 @@ char	*ft_strpbrk(const char *s1, const char *s2)
         i++;
     }
     return(NULL);
-}
-int main()
-{
-    printf("%s\n",ft_strpbrk("hello","oe"));
 }

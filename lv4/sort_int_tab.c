@@ -16,15 +16,3 @@ void sort_int_tab(int *tab, unsigned int size)
             i++;
     }
 }
-#include<stdio.h>
-int main()
-{
-    int a[] = {7,4,8,0,3};
-    sort_int_tab(a,5);
-    int i = 0;
-    while(i < 5)
-    {
-        printf("%d ",a[i]);
-        i++;
-    }
-}

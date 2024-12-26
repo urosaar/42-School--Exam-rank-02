@@ -1,9 +1,7 @@
 #include<unistd.h>
-#include<stdio.h>
 
 int main(int ac,char **av)
 {
-    // printf("????????????????");
     int i = 0;
     if(ac == 4 && !av[2][1] && !av[3][1])
     {
