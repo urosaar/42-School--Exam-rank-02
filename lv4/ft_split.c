@@ -6,7 +6,7 @@ int count_words(char *str)
     int in_word = 0;
     while (*str)
     {
-        if (*str == ' ' && *str == '\t' && *str == '\n')
+        if (*str == ' ' || *str == '\t' || *str == '\n')
             in_word = 0;
         else if (in_word == 0)
         {
