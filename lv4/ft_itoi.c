@@ -1,16 +1,21 @@
 #include <stdlib.h>
 
-int get_num_length(int nbr)
+int get_length(int n)
 {
-    int length = 0;
-    if (nbr <= 0) 
-        length++;
-    while (nbr)
+    int i = 0;
+    if (n == 0) 
+        i = 1;
+    else if( n < 0)
     {
-        nbr /= 10;
-        length++;
+        i++;
+        n = -n;
     }
-    return length;
+    while (n > 0)
+    {
+        n /= 10;
+        i++;
+    }
+    return i;
 }
 
 void ft_putnbr(long n, char *str, int length)
@@ -35,7 +40,7 @@ void ft_putnbr(long n, char *str, int length)
 }
 char *ft_itoa(int nbr)
 {
-    int length = get_num_length(nbr);
+    int length = get_length(nbr);
     char *result = (char *)malloc(length + 1);
     if (!result)
         return NULL;
