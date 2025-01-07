@@ -40,6 +40,25 @@ void ft_putnbr(long n, char *str, int length)
 }
 char *ft_itoa(int nbr)
 {
+    if (nbr == -2147483648) 
+      {
+        char *result = (char *)malloc(12);  
+        if (!result) 
+            return NULL;
+        result[0] = '-';
+        result[1] = '2';
+        result[2] = '1';
+        result[3] = '4';
+        result[4] = '7';
+        result[5] = '4';
+        result[6] = '8';
+        result[7] = '3';
+        result[8] = '6';
+        result[9] = '4';
+        result[10] = '8';
+        result[11] = '\0'; 
+        return result;
+    }
     int length = get_length(nbr);
     char *result = (char *)malloc(length + 1);
     if (!result)
