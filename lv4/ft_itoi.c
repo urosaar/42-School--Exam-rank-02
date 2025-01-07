@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int get_length(int n)
+int get_num_length(int n)
 {
     int i = 0;
     if (n == 0) 
@@ -59,7 +59,7 @@ char *ft_itoa(int nbr)
         result[11] = '\0'; 
         return result;
     }
-    int length = get_length(nbr);
+    int length = get_num_length(nbr);
     char *result = (char *)malloc(length + 1);
     if (!result)
         return NULL;
