@@ -15,7 +15,7 @@ int ft_atoi_base(const char *str, int str_base)
     }
     else if (str[i] == '+')
         i++; 
-	while (str[i])
+    while (str[i])
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 			c = str[i] - '0';
